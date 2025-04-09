@@ -242,134 +242,34 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
-
 .contenedor-redes-sociales {
   margin: 20px 0;
   padding: 20px;
   text-align: center;
   display: flex;
   justify-content: center;
-  gap: 10px;
-  flex-wrap: nowrap;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 .contenedor-redes-sociales a {
-  position: relative;
-  display: inline-block;
-  height: 36px;
-  width: 130px;
-  line-height: 35px;
-  padding: 0;
-  color: #fff;
-  border-radius: 50px;
-  background: #fff;
-  margin: 5px;
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-}
-
-.contenedor-redes-sociales a:hover span.circulo {
-  left: 100%;
-  margin-left: -35px;
-  background: #fff;
-}
-
-.contenedor-redes-sociales a:hover span.titulo {
-  opacity: 0;
-}
-
-.contenedor-redes-sociales a:hover span.titulo-hover {
-  opacity: 1;
-  color: #fff;
-}
-
-.contenedor-redes-sociales a span.titulo-hover {
-  opacity: 0;
-}
-
-.contenedor-redes-sociales a span.circulo {
-  display: block;
-  color: #fff;
-  position: absolute;
-  float: left;
-  margin: 3px;
-  line-height: 30px;
-  height: 30px;
-  width: 30px;
-  top: 0;
-  left: 0;
-  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: #2f5f8f; /* Azul corporativo */
   border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.contenedor-redes-sociales a span.circulo i {
-  width: 100%;
-  text-align: center;
-  font-size: 16px;
-  line-height: 30px;
-}
-
-.contenedor-redes-sociales a span.titulo,
-.contenedor-redes-sociales a span.titulo-hover {
-  font-family: arial, sans-serif;
-  position: absolute;
-  text-align: center;
-  margin: 0 auto;
-  font-size: 16px;
-  font-weight: 400;
-  transition: .5s;
-}
-
-.contenedor-redes-sociales a span.titulo {
-  right: 15px;
-}
-
-.contenedor-redes-sociales a span.titulo-hover {
-  left: 15px;
-}
-
-/*----------Colores de los botones----------*/
-
-.contenedor-redes-sociales .whatsapp {
-  border: 2px solid #25D366;
-}
-
-.contenedor-redes-sociales .whatsapp:hover,
-.contenedor-redes-sociales .whatsapp span.circulo {
-  background: #25D366;
-}
-
-.contenedor-redes-sociales .whatsapp:hover span.circulo,
-.contenedor-redes-sociales .whatsapp span.titulo {
-  color: #25D366;
-}
-
-.contenedor-redes-sociales .tiktok {
-  border: 2px solid #000;
-}
-
-.contenedor-redes-sociales .tiktok:hover,
-.contenedor-redes-sociales .tiktok span.circulo {
-  background: #000;
-}
-
-.contenedor-redes-sociales .tiktok:hover span.circulo,
-.contenedor-redes-sociales .tiktok span.titulo {
-  color: #000;
-}
-
-.contenedor-redes-sociales .instagram {
-  border: 2px solid #C13584;
-}
-
-.contenedor-redes-sociales .instagram:hover,
-.contenedor-redes-sociales .instagram span.circulo {
-  background: #C13584;
-}
-
-.contenedor-redes-sociales .instagram:hover span.circulo,
-.contenedor-redes-sociales .instagram span.titulo {
-  color: #C13584;
+.contenedor-redes-sociales a:hover {
+  transform: translateY(-5px);
+  background-color: #2f5f8f;
+  color: white;
 }
 
 .copyright {
